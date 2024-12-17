@@ -1,0 +1,295 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #f351c8;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('https://images.wallpaperscraft.com/image/single/keyboard_laptop_gradient_203739_1280x800.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    animation: fadeIn 2s ease-out;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: slideUp 1s ease-out;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    animation: slideUp 1.5s ease-out;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #74d5e6;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #a70080;
+    transform: translateY(-5px);
+}
+
+/* About Section */
+.about {
+    background-image: linear-gradient(rgb(95, 221, 243),white,rgb(226, 99, 194));
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Projects Section */
+.projects {
+    background-image: linear-gradient(rgb(249, 133, 249),white);
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background-image: linear-gradient(rgb(249, 250, 250),rgba(252, 250, 246, 0.438));
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    background-color: #e9f8fa;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-item {
+    font-size: 18px;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-link i {
+    font-size: 30px;
+}
+
+.contact-link:hover {
+    color: #0073e6; /* Change color on hover */
+}
+
+/* WhatsApp icon color */
+.contact-link .fa-whatsapp {
+    color: #25d366;
+}
+
+/* LinkedIn icon color */
+.contact-link .fa-linkedin {
+    color: #0077b5;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+/* Skills & Certificates Section */
+.skills {
+    background-color: rgba(48, 9, 147, 0.1);
+    padding: 60px 20px;
+    text-align: center;
+    background-image: url('https://img.freepik.com/free-photo/top-view-office-desk-assortment-with-copy-space_23-2148707955.jpg');
+      background-repeat: cover;
+    background-size: cover;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #020a0a;
+}
+
+.skills-list ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
+.skills-list ul li {
+    padding: 10px 20px;
+    background-color: #f7f5f5;
+    border-radius: 20px;
+    transition: background-color 0.1s ease;
+    margin-top: 30px;
+    background-color: #bbf2f5;
+}
+
+.skills-list ul li:hover {
+    background-color: hsl(39, 95%, 85%);
+    color: white;
+}
+
+.certificate-marquee {
+    margin-top: 30px;
+    background-image: linear-gradient(rgb(232, 60, 203),rgb(248, 227, 135));
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+/* Awards & Honors Section */
+.awards {
+    background-color: rgba(204, 9, 184, 0.1);
+    padding: 60px 20px;
+    text-align: center;
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXsnk80G8_MKgh6eZOPmpetoXPEsS9xUFJFA&s');
+    background-size: cover;
+}
+
+.awards h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.awards-list ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.awards-list ul li {
+    margin: 15px 0;
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.awards-list ul li:hover {
+    background-color: #7ae1ef;
+    color: white;
+}
